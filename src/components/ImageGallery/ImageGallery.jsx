@@ -3,7 +3,7 @@ import React from 'react';
 import s from './ImageGallery.module.css';
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
 
-const ImageGallery = ({images, onClickImage}) => {
+const ImageGallery = ({images, onClick}) => {
     return (
  <ul className={s.ImageGallery} >
         {images.length > 0 &&
@@ -13,7 +13,7 @@ const ImageGallery = ({images, onClickImage}) => {
               // key={index}
             webformatURL={webformatURL}
               largeImageURL={largeImageURL}
-              onClick={onClickImage}
+              onClick={onClick}
           />
         ))}
     </ul>
